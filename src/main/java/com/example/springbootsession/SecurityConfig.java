@@ -7,8 +7,6 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.session.web.http.CookieSerializer;
-import org.springframework.session.web.http.DefaultCookieSerializer;
 
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
@@ -35,14 +33,14 @@ public class SecurityConfig {
         return http.build();
     }
 
-    @Bean
-    public CookieSerializer cookieSerializer() {
-        DefaultCookieSerializer serializer = new DefaultCookieSerializer();
-        serializer.setCookieName("SESSIONID");
-        serializer.setCookiePath("/");
-        serializer.setDomainNamePattern("^.+?\\.(\\w+\\.[a-z]+)$");
-        return serializer;
-    }
+//    @Bean
+//    public CookieSerializer cookieSerializer() {
+//        DefaultCookieSerializer serializer = new DefaultCookieSerializer();
+//        serializer.setCookieName("SESSIONID");
+//        serializer.setCookiePath("/");
+//        serializer.setDomainNamePattern("^.+?\\.(\\w+\\.[a-z]+)$");
+//        return serializer;
+//    }
 
     @Bean
     public HttpSessionListener httpSessionListener() {
