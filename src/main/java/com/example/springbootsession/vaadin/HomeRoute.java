@@ -1,4 +1,4 @@
-package com.example.springbootsession.ui;
+package com.example.springbootsession.vaadin;
 
 import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
@@ -11,6 +11,6 @@ import javax.annotation.security.PermitAll;
 public class HomeRoute extends HorizontalLayout {
 
     public HomeRoute() {
-        this.add(new Label("It works!"));
+        this.add(new Label("Vaadin works!"));
     }
 }

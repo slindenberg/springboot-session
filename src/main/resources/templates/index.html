@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Spring Boot Thymeleaf Hello World Example</title>
+
+    <link rel="stylesheet" th:href="@{webjars/bootstrap/4.2.1/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+
+</head>
+<body>
+
+<a href="/vaadin">Vaadin</a>
+<br/>
+<a href="/h2" target="_blank">H2</a>
+<hr/>
+<p th:text="${auth}"/>
+
+<!--<hr>-->
+<!--<form action="#" th:action="@{/sessionObject}" th:object="${so}" method="post">-->
+<!--    <p>Message: <input type="text" th:field="*{so.}"/></p>-->
+<!--    <p><input type="submit" value="Submit"/> <input type="reset" value="Reset"/></p>-->
+<!--</form>-->
+
+</body>
+

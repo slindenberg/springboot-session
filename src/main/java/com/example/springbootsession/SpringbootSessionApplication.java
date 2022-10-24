@@ -13,4 +13,6 @@ public class SpringbootSessionApplication implements AppShellConfigurator {
     public static void main(String[] args) {
         SpringApplication.run(SpringbootSessionApplication.class, args);
     }
+
+
 }
